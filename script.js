@@ -1,7 +1,6 @@
 let header = document.querySelector("header");
 let search = document.querySelector(".i-search");
 let links = document.querySelector(".links");
-let li = document.querySelectorAll(".link");
 window.onscroll = function () {
   if (this.scrollY >= 100) {
     header.classList.add("active");
@@ -16,9 +15,6 @@ function open_menu() {
 }
 function close_menu() {
   links.classList.remove("active");
-  li.forEach((li) => {
-    li.addEventListener("click", () => {
-      links.classList.remove("active");
-    });
-  });
+
 }
+
