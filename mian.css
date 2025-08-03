@@ -142,7 +142,7 @@ p {
 .cars {
   display: flex;
   flex-wrap: wrap;
-
+justify-content: center;
   gap: 30px;
 }
 .cars .car span {
@@ -566,3 +566,4 @@ header .container .list {
     width: 100%;
   }
 }
+
